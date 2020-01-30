@@ -1,9 +1,9 @@
-// const router = require('express').Router();
-// const db = require("../models");
+const router = require('express').Router();
+const db = require("../models");
 
 
 
-// router.get('/', (req, res) => res.json('Sample API get endpoint'));
+router.get('/test', (req, res) => res.json('Sample API get endpoint'));
 
 
 // // getLastWorkout() GET /api/workouts
@@ -70,4 +70,4 @@
 
 
 
-// module.exports = router;
+module.exports = router;
