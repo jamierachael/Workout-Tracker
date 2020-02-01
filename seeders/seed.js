@@ -4,7 +4,7 @@
 let mongoose = require("mongoose");
 let db = require("../models");
 
-mongoose.connect("mongodb://localhost/workout_db", {
+mongoose.connect(process.env.MONGODB_URI || "mongodb://jamierachael:Cheeseme1@ds141924.mlab.com:41924/heroku_rp5k8lsz", {
   useNewUrlParser: true,
   useFindAndModify: false,
   useUnifiedTopology: true
