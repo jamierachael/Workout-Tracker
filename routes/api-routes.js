@@ -1,17 +1,12 @@
 const router = require('express').Router();
 const db = require("../models");
-// const mongojs = require("mongojs")
-
-
 
 // Works! 
 // router.get('/test', (req, res) => res.json('Sample API get endpoint'));
 
 
-// // getLastWorkout() GET /api/workouts
+// getLastWorkout() GET /api/workouts
 
-// // can use for "all" maybe
-// Works! 
 router.get("/workouts", (req, res) => {
     db.Workout.find({})
         .then(dbWorkout => {
@@ -22,26 +17,22 @@ router.get("/workouts", (req, res) => {
         });
 });
 
-//  addExercise PUT /api/workouts/ 
-// Not yet working
-// updating current
+// addExercise PUT /api/workouts/ 
+
 router.put("/workouts/:id", ({ params, body }, res) => {
     console.log(body);
     db.Workout.findByIdAndUpdate(
-
         params.id,
         {
             $push: {
                 exercises: body,
 
             },
-
         },
         {
             new: true,
             runValidators: true
         }
-
     )
         .then(dbWorkout => {
             res.json(dbWorkout);
@@ -49,16 +40,13 @@ router.put("/workouts/:id", ({ params, body }, res) => {
         .catch(err => {
             res.json(err);
         });
-
 });
 
-// // // createWorkout POST /api/workouts
-// Not yet working  what replaces { new: true }?
+// createWorkout POST /api/workouts
 
 router.post("/workouts", ({ body }, res) => {
     console.log(body);
     db.Workout.create({})
-        // .then(({ _id }) => db.Workout.findOneAndUpdate({}, { $push: { workouts: _id } }, { new: true }))
         .then(dbWorkout => {
             res.json(dbWorkout);
         })
@@ -69,8 +57,7 @@ router.post("/workouts", ({ body }, res) => {
     res.send('Got a POST request')
 });
 
-
-// // getWorkoutsInRange() GET /api/workouts/range
+// getWorkoutsInRange() GET /api/workouts/range
 
 router.get("/workouts/range", (req, res) => {
     db.Workout.find({}).limit(7)
@@ -81,7 +68,6 @@ router.get("/workouts/range", (req, res) => {
             res.json(err);
         });
 });
-
 
 
 
