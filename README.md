@@ -4,7 +4,7 @@
 * ['Workout-Tracker - Git Hub'](https://github.com/jamierachael/Workout-Tracker)
 * ['Workout-Tracker - Git Hub IO']( https://jamierachael.github.io/Workout-Tracker/)
 * ['Workout-Tracker - Demo Video'](https://drive.google.com/file/d/1d6yBfyxm4c_GSpIwdrbi7kIV76JczAH0/view)
-* ['Workout-Tracker - Heroku Deployment'](https://floating-brook-77159.herokuapp.com/)
+* ['Workout-Tracker - Heroku Deployment'](https://aqueous-fortress-83537.herokuapp.com/)
 
 
 ### Summary
