@@ -1,3 +1,6 @@
+// Jamie Morris - Homework 13
+// Workout-Tracker
+
 const workoutTypeSelect = document.querySelector("#type");
 const cardioForm = document.querySelector(".cardio-form");
 const resistanceForm = document.querySelector(".resistance-form");
@@ -22,7 +25,7 @@ init();
 async function init() {
   if (location.search.split("=")[1] === undefined) {
     const workout = await API.getLastWorkout();
-    if(workout) {
+    if (workout) {
       location.search = "?id=" + workout._id;
     }
     else {
@@ -136,16 +139,16 @@ function clearInputs() {
   weightInput.value = "";
 }
 
-if(workoutTypeSelect) {
+if (workoutTypeSelect) {
   workoutTypeSelect.addEventListener("change", handleWorkoutTypeChange);
 }
-if(completeButton) {
-  completeButton.addEventListener("click", function(event) {
+if (completeButton) {
+  completeButton.addEventListener("click", function (event) {
     shouldNavigateAway = true;
     handleFormSubmit(event);
   });
 }
-if(addButton) {
+if (addButton) {
   addButton.addEventListener("click", handleFormSubmit);
 }
 toast.addEventListener("animationend", handleToastAnimationEnd);

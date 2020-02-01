@@ -1,3 +1,6 @@
+// Jamie Morris - Homework 13
+// Workout-Tracker
+
 let mongoose = require("mongoose");
 let db = require("../models");
 
