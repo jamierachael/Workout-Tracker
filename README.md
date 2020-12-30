@@ -1,11 +1,10 @@
 # Workout-Tracker
-## Homework 13 Workout-Tracker
 
-* ['Workout-Tracker - Git Hub'](https://github.com/jamierachael/Workout-Tracker)
-* ['Workout-Tracker - Git Hub IO']( https://jamierachael.github.io/Workout-Tracker/)
-* ['Workout-Tracker - Demo Video'](https://drive.google.com/file/d/1d6yBfyxm4c_GSpIwdrbi7kIV76JczAH0/view)
-* ['Workout-Tracker - Heroku Deployment'](https://aqueous-fortress-83537.herokuapp.com/)
+* [Workout-Tracker - Git Hub](https://github.com/jamierachael/Workout-Tracker)
+* [Workout-Tracker - Demo Video](https://drive.google.com/file/d/1d6yBfyxm4c_GSpIwdrbi7kIV76JczAH0/view)
+* [Workout-Tracker - Heroku Deployment](https://aqueous-fortress-83537.herokuapp.com/)
 
+![Workout-Tracker - Demo](demo/gif.gif)
 
 ### Summary
 * This project emphasizes the use of MongoDB, mongoose, morgan, and express, to dynamically update a fitness tracking app
@@ -15,7 +14,7 @@
 * To run: run npm init, npm install to initialize, connect to mongoDB, run using npm start in terminal
 
 ### This project has the following features: 
-* An Server JS document
+* A Server JS document
     * This provides the logic for the client side of the app, in this case, it used the backend through Node JS. 
 * Public Folder
     * Contains client side code
@@ -78,12 +77,17 @@
 │
 ├── server.js
 
+## Authors
 
-### Code Validation 
-    * These use W3C Code Validators for HTML, CSS and Javascript
-        * Format: ![Validator-HTML](N/A)
-        * Format: ![Validator-CSS](N/A)
-        * Format: ![Validator-JS](N/A)
+* **Jamie Rachael Morris** - *Initial work* - [Git Hub Profile](https://github.com/jamierachael)
+* UNH Project Design
+
+## Acknowledgments
+
+* Hat tip to UNH for providing project parameters and code examples
+
+
+
         
 
 
