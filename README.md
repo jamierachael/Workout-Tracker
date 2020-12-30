@@ -49,33 +49,33 @@
 ### Features: 
 * File directory: 
 
-├── Models
-│   ├── index.js
-│   └── workout.js
-│ 
-├── Public
-│   └── api.js
-│   └── exercise.html
-|   └── index.html
-|   └── index.js
-|   └── stats.html
-|   └── stats.js
-|   └── style.css
-|   └── workout-style.css
-|   └── workout.js
-|
-├── Seeders
-│   ├── seed.js
-│
-├── Routes
-│   └── html-routes.js
-│   └── api-routes.js
-│ 
-├── node_modules
-│ 
-├── package.json
-│
-├── server.js
+* Models:
+    * index.js
+    * workout.js
+* Public: 
+    * api.js
+    * exercise.html
+    * index.html
+    * index.js
+    * stats.html
+    * stats.js
+    * style.css 
+    * workout-style.css
+    * workout.js
+
+* Seeders: 
+    * seed.js
+
+* Routes: 
+    * html-routes.js
+    * api-routes.js
+
+* node_modules
+
+* package.json
+
+* server.js
+
 
 ## Authors
 
