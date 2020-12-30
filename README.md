@@ -52,6 +52,7 @@
 * Models:
     * index.js
     * workout.js
+    
 * Public: 
     * api.js
     * exercise.html
